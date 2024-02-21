@@ -2,14 +2,14 @@ package org.yaomq.java.pojo;
 
 public class Dish {
     private final String name;
-    private final boolean vegetarian;
+    private final boolean vagetarian;
     private final int calories;
     private final Type type;
-    public Dish(String name, boolean vagetarian, int calories, Type type, String name1, boolean vegetarian, int calories1, Type type1){
-        this.name = name1;
-        this.vegetarian = vegetarian;
-        this.calories = calories1;
-        this.type = type1;
+    public Dish(String name, boolean vagetarian, int calories, Type type){
+        this.name = name;
+        this.vagetarian = vagetarian;
+        this.calories = calories;
+        this.type = type;
     }
 
     public String getName() {
@@ -17,7 +17,7 @@ public class Dish {
     }
 
     public boolean isVegetarian() {
-        return vegetarian;
+        return vagetarian;
     }
 
     public int getCalories() {
@@ -32,7 +32,7 @@ public class Dish {
     public String toString() {
         return "Dish{" +
                 "name='" + name + '\'' +
-                ", vegetarian=" + vegetarian +
+                ", vagetarian=" + vagetarian +
                 ", calories=" + calories +
                 ", type=" + type +
                 '}';
